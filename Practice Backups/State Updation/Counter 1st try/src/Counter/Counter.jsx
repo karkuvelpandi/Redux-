@@ -4,7 +4,12 @@ import { decrAction, incrAction } from '../redux/counter/counter.action'
 let Counter = () => {
     let dispatch = useDispatch()
     let Quantity=useSelector((state)=>{
-             return state.qty
+             if(state.qty<=0){
+                return state.qty=0
+             }
+             else{
+                return state
+             }
     })
     let incrHandler = () => {
         dispatch(incrAction())
