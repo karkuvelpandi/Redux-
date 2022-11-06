@@ -1,10 +1,10 @@
-import Counter from "./Counter/Counter";
+import User from "./User/User";
 import {Provider} from "react-redux"
-import {store} from './redux/Store'
+import {store} from './redux/store'
 function App() {
   return <>
 <Provider store={store}>
-<Counter/>
+   <User/>
 </Provider>
 
   <h1>Hello I'm app </h1>
