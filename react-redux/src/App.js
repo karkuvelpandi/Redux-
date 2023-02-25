@@ -7,7 +7,6 @@ let App = () => {
 
        return <>
               <Provider store={store}>
-              
                      <Message />
                      <Counter />
               </Provider>
